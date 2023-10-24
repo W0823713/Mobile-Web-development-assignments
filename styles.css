@@ -1,0 +1,169 @@
+/************
+ Body Styles 
+ ************/
+body {
+    background-color: #DAD2BC;
+    font-family: Arial, sans-serif;
+}
+
+/************
+ form
+ ************/
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/************
+ .form-group
+ ************/
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/************
+  label
+ ************/
+label {
+    font-size: 24px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/************
+  button
+ ************/
+button {
+    background-color: #542344;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/*****************
+  .checkbox-label
+ ****************/
+.checkbox-label {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*****************
+  .checkbox
+ ****************/
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*******************
+  .checkbox-checkbox
+ *******************/
+.custom-checkbox {
+    position: relative;
+    margin-right: 10px;
+}
+
+/*************************
+  .custom-checkbox input
+ *************************/
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/*************************
+  .custom-checkbox label
+ *************************/
+.custom-checkbox label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+/********************************
+  .custom-checkbox label::before
+ ********************************/
+.custom-checkbox label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #542344;
+    border-radius: 4px;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label:before {
+    background-color: #542344;
+}
+
+/***************
+   media  
+ ***************/
+@media screen and (min-width: 601px) {
+    body {
+        background-color: #BCBDC0;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .form-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+/*********************************************************************************
+*********************************************************************************
+
+Website Name: Form
+Website Author: Arya Patel
+
+The colors used are:
+
+   Background color for the body in mobile view: #DAD2BC (Yellow)
+Background color for the body in desktop view: #BCBDC0 (Blue)
+Button background color: #542344
+Border color for input fields and textarea: #ccc
+Checkbox border color: #542344
+Checkbox background color when checked: #542344
+
+****************************************************************************************************************************************************
+****************************************************************************************************************************************************
+=====================
+  Table of Contents:
+===================== 
+
+1. Body Background Colors (Mobile & Desktop)
+2. Form Styling (Max Width, Margin, Padding)
+3. Form Group Styling (Flex Layout, Margin)
+4. Label Font Size
+5. Input Fields and Textarea Styling
+6. Button Styling (Background Color, Padding)
+7. Checkbox Label Styling (Font Size, Alignment)
+8. Custom Checkbox Styling (Size, Border)
+
+
+
+/****************************************************************************************************************************************************
+****************************************************************************************************************************************************/

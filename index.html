@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arya's Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Arya Patel</h1>
+
+    <form id="form">
+        <div class="form-section">
+            <h1>Personal Information</h1>
+            <div class="form-group">
+                <label for="full-name">Name:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="date-of-birth">Date of Birth:</label>
+                <input type="date" id="date-of-birth" name="date-of-birth" required>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for "female">Female</label>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h1>Contact Information</h1>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number" required pattern="[0-9]{10}">
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" placeholder="Your address" required></textarea>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h1>Payment Information</h1>
+            <div class="form-group">
+                <label for="credit-card">Credit Card Number:</label>
+                <input type="text" id="credit-card" name="credit-card" placeholder="Credit Card Number" required pattern="[0-9]{10}">
+            </div>
+            <div class="form-group">
+                <label for="expiration-date">Expiration Date:</label>
+                <input type="date" id="expiration-date" name="expiration-date" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" required pattern="[0-9]{3}">
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="validate.js"></script>
+</body>
+</html>

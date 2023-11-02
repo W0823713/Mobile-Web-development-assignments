@@ -1,0 +1,150 @@
+/************
+ Body Styles 
+ ************/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #BCBDC0; 
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+/************
+ form
+ ************/
+.form-section {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 24px;
+}
+
+/************
+  label
+ ************/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/************
+  button
+ ************/
+button[type="submit"] {
+    background-color: #542344;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/***************
+   media  
+ ***************/
+@media screen and (min-width: 601px) {
+    body {
+        background-color: #DAD2BC; 
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-size: 24px; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    textarea {
+        flex: 1;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #8a8989; 
+    }
+
+    label {
+        font-size: 28px; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        font-size: 22px; 
+    }
+}
+/*********************************************************************************
+*********************************************************************************
+
+Website Name: Assignment-7
+Website Author: Arya Patel
+
+The colors used are:
+
+#BCBDC0 - Desktop background color
+#542344 - Button background color
+#ccc - Border color for input fields and textarea
+#DAD2BC - Tablet/Desktop background color
+#ABCDEF - Mobile background color
+#8a8989 - Another mobile background color
+#fff - White background color for the form
+#333 - Header text color
+
+
+****************************************************************************************************************************************************
+****************************************************************************************************************************************************
+=====================
+  Table of Contents:
+===================== 
+
+1. Body Styles
+2. Header Styles
+3. Form Styles
+4. Label Styles
+5. Input and Textarea Styles
+6. Button Styles
+7. Media Queries for Tablet and Desktop
+8. Media Queries for Mobile
+
+
+
+
+/****************************************************************************************************************************************************
+****************************************************************************************************************************************************/

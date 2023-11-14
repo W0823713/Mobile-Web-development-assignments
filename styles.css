@@ -1,0 +1,50 @@
+/*****************************************************
+ Default background color for all screen sizes 
+ *****************************************************/
+.bg-primary {
+    background-color: #007BFF; /* Blue */
+}
+
+/*****************************************************
+ Media query for large screens (1025px and above) 
+ *****************************************************/
+@media (min-width: 1025px) {
+    .bg-dark {
+        background-color: #470024 !important; /* Orange for large screens */
+    }
+}
+
+/****************************************************
+ Media query for medium screens (601px to 1024px) 
+ ****************************************************/
+@media (min-width: 601px) and (max-width: 1024px) {
+    .bg-dark {
+        background-color: #2A2A72 !important; /* Green for medium screens */
+    }
+}
+
+/****************************************
+ Media query for small screens (up to 600px) 
+ ****************************************/
+@media (max-width: 600px) {
+    .bg-dark {
+        background-color: #16262E !important; 
+    }
+}
+
+/*********************************************************************************
+*********************************************************************************
+
+Website Name: Assignment-8
+Website Author: Arya Patel
+
+The colors used are:
+
+Default background color for all screen sizes: #007BFF (Blue)
+Background color for large screens (1025px and above): #470024 (Orange)
+Background color for medium screens (601px to 1024px): #2A2A72 (Green)
+Background color for small screens (up to 600px): #16262E (Purple)
+
+
+/****************************************************************************************************************************************************
+****************************************************************************************************************************************************

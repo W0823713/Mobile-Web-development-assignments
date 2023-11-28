@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Arya Patel's Xbox Inventory</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="container mt-4">
+        <h1 class="text-center">Arya Patel</h1>
+    </header>
+
+    <!-- Content -->
+    <div class="container mt-4">
+
+        <!-- Form Section (Top for small devices) -->
+        <section class="mt-4 d-sm-block d-md-none">
+            <form>
+                <div class="form-group">
+                    <label for="productName">Xbox Model</label>
+                    <select class="form-control" id="productName">
+                        <!-- Add options for Xbox models -->
+                        <option>Xbox Series X</option>
+                        <option>Xbox Series S</option>
+                        <option>Xbox One X</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="range" class="form-control-range" id="quantity" min="1" max="50" value="1">
+                    <span id="quantityValue">1</span>
+                </div>
+                <div class="form-group">
+                    <label>Would you like to order</label>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="orderSwitch">
+                        <label class="custom-control-label" for="orderSwitch"></label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+
+        <!-- Image Section -->
+        <section>
+            <img src="img1.jpg" class="img-fluid mx-auto d-block" alt="Xbox Series X">
+            <p class="text-center mt-2">Unleashing the power of next-gen gaming. 🎮 #XboxSeriesX</p>
+        </section>
+        
+        <section>
+            <img src="img2.jpg" class="img-fluid mx-auto d-block" alt="Xbox Series S">
+            <p class="text-center mt-2">Compact size, colossal fun! Introducing the Xbox Series S. 🕹️ #XboxSeriesS</p>
+        </section>
+        
+        <section>
+            <img src="img3.jpg" class="img-fluid mx-auto d-block" alt="Xbox One X">
+            <p class="text-center mt-2">The legacy of gaming excellence continues with the Xbox One X. 🌟 #XboxOneX</p>
+        </section>
+
+        <!-- Table Section -->
+        <section class="mt-4">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Xbox Model</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Xbox Series X</td>
+                        <td>$499</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Xbox Series S</td>
+                        <td>$299</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Xbox One X</td>
+                        <td>$399</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Form Section (Bottom for larger devices) -->
+        <section class="mt-4 d-none d-md-block">
+            <form>
+                <div class="form-group">
+                    <label for="productName">Xbox Model</label>
+                    <select class="form-control" id="productName">
+                        <!-- Add options for Xbox models -->
+                        <option>Xbox Series X</option>
+                        <option>Xbox Series S</option>
+                        <option>Xbox One X</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="range" class="form-control-range" id="quantity" min="1" max="50" value="1">
+                    <span id="quantityValue">1</span>
+                </div>
+                <div class="form-group">
+                    <label>Would you like to order</label>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="orderSwitch">
+                        <label class="custom-control-label" for="orderSwitch"></label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    </script>
+
+</body>
+</html>

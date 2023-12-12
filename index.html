@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya Bank app</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-dark text-light">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72l-.25-1Z"/>
+              </svg>
+            
+             
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Move the form to the right -->
+                <form class="d-flex ms-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Perks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                    </ul>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="container mt-5">
+        <h1 class="bg-danger text-white p-3">Arya Patel Bank</h1>
+
+
+   <!-- Products Section -->
+   <div class="container mt-4">
+    <h2 id="products">Accounts</h2>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <!-- Replaced with your provided card structure -->
+            <div class="card mt-4" style="width: 18rem;">
+                <img src="black-color-round-seal-sticker-in-word-savings-account-on-white-background-2P3EC6A.jpg" class="card-img-top" alt="Product 1">
+                <div class="card-body bg-black">
+                    <h5 class="card-title">Savings Account</h5>
+                    <p class="card-text"></p>
+                    <a href="#modalId" data-bs-toggle="modal">A savings account is a type of bank account.......</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <!-- Repeated for other products -->
+            <div class="card mt-4" style="width: 18rem;">
+                <img src="Unknown.png" class="card-img-top" alt="Product 2">
+                <div class="card-body bg-black">
+                    <h5 class="card-title">Checking Account</h5>
+                    <p class="card-text"></p>
+                    <a href="#modalId" data-bs-toggle="modal">A checking account offers........</a>
+                </div>
+            </div>
+        </div>
+     
+
+        <div class="col-md-4">
+            <!-- Repeated for other products -->
+            <div class="card mt-4" style="width: 18rem;">
+                <img src="images.png" class="card-img-top" alt="Product 3">
+                <div class="card-body bg-black">
+                    <h5 class="card-title">Buisness Account</h5>
+                    <p class="card-text"></p>
+                    <a href="#modalId" data-bs-toggle="modal">A business bank account is a bank account that's........</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Carousel of 3 Images -->
+<div id="carouselExampleIndicators" class="carousel slide mt-4" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-75" src="Unknown.jpeg" alt="First slide">
+          <h5>
+              Home loan
+          </h5>
+          <p>In-house financing is when a retailer extends a customer a loan for the purchase of its goods or services. </p>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-75" src="Unknown-1.jpeg" alt="Second slide">
+          <h5>Car loan</h5>
+          <p>A Vehicle Loan is a loan that allows you to purchase two and four wheelers for personal use.</p>
+        </div>
+      </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+ 
+
+
+<div class="modal fade" id="modalId" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content bg-dark text-light">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">More Information</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at efficitur dolor. Morbi ac arcu mauris. Vestibulum finibus massa eu consectetur eleifend. Proin hendrerit nulla et pretium molestie. Nam augue enim, luctus et arcu non, placerat semper nisl. Nunc scelerisque nisi non elit lacinia interdum. Suspendisse malesuada justo rhoncus, hendrerit mauris in, posuere enim. Donec ornare leo vel magna congue dictum.</p>
+
+                <p>Pellentesque vitae elit risus. Phasellus eget ornare lacus. Morbi interdum sit amet metus at accumsan. Duis sed purus venenatis, tincidunt augue eu, molestie odio. Curabitur pellentesque bibendum dapibus. Aenean sagittis, lectus id suscipit ultricies, dui ipsum ultrices mi, et feugiat urna tortor et mauris. Phasellus id rhoncus dolor. Sed accumsan et ante sed venenatis.</p>
+
+                <p>Phasellus eu eros in magna sollicitudin viverra. Phasellus blandit justo in fermentum sagittis. Nunc eros leo, sodales vel tortor id, ultricies molestie purus. Sed porta nisl et nunc venenatis, sit amet lobortis nisi auctor. Nullam eleifend sapien est, vitae facilisis tellus tristique a. Vivamus a lacus ut tortor sagittis lacinia id nec sem. Fusce tempus cursus turpis, ut vestibulum risus sodales eget. Nunc pulvinar dapibus aliquet. Proin sed finibus nunc. Maecenas eleifend ornare libero eu varius. Fusce magna lorem, molestie at volutpat ut, consequat id sapien. Donec porta, diam at ullamcorper porttitor, nisl urna luctus purus, vitae condimentum leo massa et turpis. Nullam hendrerit nunc et vehicula lacinia. Nam at mollis augue. Quisque tristique fermentum efficitur. Aliquam at nunc et ante efficitur lobortis.</p>
+
+                <p>Nunc vitae elit non nisi consequat fermentum. Etiam consequat erat ac urna dignissim auctor. Pellentesque non orci convallis, dignissim nulla a, euismod dolor. Etiam ipsum augue, hendrerit in dolor eget, mollis imperdiet velit. Fusce porttitor egestas euismod. Phasellus fermentum gravida augue eu placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Quisque non diam id nibh tincidunt viverra vitae eget lorem.</p>
+
+                <p>Praesent non nulla risus. Curabitur et orci nec metus vehicula porta. Nulla egestas lobortis quam fringilla lacinia. Maecenas enim enim, pulvinar vel porta vel, volutpat non ex. Donec id erat quis sem gravida sagittis ac sit amet diam. Suspendisse laoreet nisi sed semper tristique. Fusce porttitor varius velit ac maximus. Fusce pulvinar, enim id tempor vulputate, metus risus laoreet magna, sed lobortis metus lorem quis purus. Nunc enim purus, suscipit tempus velit vel, vulputate porta massa. Nulla facilisi. Ut ut ipsum vel nibh dapibus interdum nec eget augue. In interdum condimentum orci, nec sollicitudin justo fermentum in. Integer hendrerit imperdiet tristique. Pellentesque sed nisi eu purus accumsan pretium vel vitae dui. Nullam tempus tellus id arcu molestie dapibus. Praesent tristique mauris ut vehicula accumsan.</p>
+              </div>
+             
+        </div>
+    </div>
+</div>	
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
+
+  
